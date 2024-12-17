@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34; 
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #61dafb; 
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #282c34; 
+    background-color: white; 
+}
+
+.keyboard {
+    width: 80%; 
+    background-color: #3c3f41; 
+    border-radius: 5px; 
+    padding: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.numbers-container {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 1rem; 
+}
+
+.keys-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.key {
+    width: 3rem; 
+    height: 3rem; 
+    border: 2px solid #61dafb; 
+    color: white; 
+    background-color: #4a4e54; 
+    margin: 0.5rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.1s; 
+    cursor: pointer; 
+}
+
+.key:hover {
+    background-color: #61dafb; 
+    transform: scale(1.1); 
+}
+
+.key:active {
+    background-color: #21a1f1;  
+    transform: scale(1); 
+}
+
+#space {
+    width: 6rem; 
+}
+
+#delete, #shift {
+    width: 4rem; 
+}
